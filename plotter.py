@@ -23,6 +23,11 @@ for file in csv_files:
     plt.plot(df['Timestamp'], df['Download Speed (Mbps)'], label='Download Speed (Mbps)')
     plt.plot(df['Timestamp'], df['Upload Speed (Mbps)'], label='Upload Speed (Mbps)')
 
+    # Annotate each point with the server location
+    for i, row in df.iterrows():
+        plt.text(row['Timestamp'], row['Ping (ms)'], f"{row['Server Location']} - {row['Ping (ms)']:.2f} ms",
+                 fontsize=8, ha='left', va='bottom', rotation=45)
+
     plt.xlabel('Timestamp')
     plt.ylabel('Value')
     plt.title(f'Internet Speed Log - {file}')

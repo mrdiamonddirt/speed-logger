@@ -1,6 +1,7 @@
 # Speed Logger
 
 A simple speed logger for the [Speedtest CLI](https://www.speedtest.net/apps/cli) written in Python.
+Created by [mrdiamonddirt](https://github.com/mrdiamonddirt/) to automate the logging of internet speed.
 The User can set a time interval in which the speed is logged to a CSV file.
 A simple plotter is included to visualize the data.
 
@@ -8,8 +9,6 @@ A simple plotter is included to visualize the data.
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 

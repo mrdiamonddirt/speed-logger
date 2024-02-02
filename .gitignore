@@ -1,0 +1,5 @@
+# Ignore files in the graphs folder
+graphs/*
+
+# Ignore files in the logs folder
+logs/*
